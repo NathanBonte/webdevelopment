@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+</head>
+<body>
+<h1>Pictures</h1>
+<p>Hieronder staat een te grote foto van een hond:</p>
+<img src="https://images.unsplash.com/photo-1552053831-71594a27632d"
+     alt="Foto van een hond" >
+
+<h3>Niet het volgende doen!!!</h3>
+<p>De 'height' and 'width' aanpassen zoals hier:</p>
+
+<img alt="Foto van een hond" src="https://images.unsplash.com/photo-1552053831-71594a27632d" height="6000" width="3742"/>
+
+<img alt="Foto van een hond" src="https://images.unsplash.com/photo-1552053831-71594a27632d" height="200" width="150"/>
+
+<h3>Dit is wel correct:</h3>
+<img alt="Foto van een hond" src="../Images/hond.jpeg">
+
+<h2>Het picture element</h2>
+<picture>
+    <source media="(min-width: 400px)" srcset="../Images/landschap.png">
+    <img src="../Images/landschap.png" alt="Een landschap">
+</picture>
+
+</body>
+</html>
