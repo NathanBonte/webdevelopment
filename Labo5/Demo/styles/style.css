@@ -1,0 +1,38 @@
+h1, h2 {
+    color: blue;
+    font-size: 5em;
+
+}
+
+/*class selector; mag je meerdere keren gebruiken*/
+.styleYellow
+{color:yellow;}
+
+.styleRed
+{color:red;
+font-size: 5em;
+    color: yellow}
+
+/* het is altijd de laatste die 'wint' als het gaat over style, dus hierboven = het geel*/
+
+/*ID-selector; mag je maar één keer gebruiken*/
+#menu
+{
+    color:blue;
+}
+
+
+/*de volgende zijn NIET hetzelfde*/
+/*section h1*/
+/*{color:yellow;} !* hier is het: "het is de 'parent' erboven en kan ook alles er nog boven'"*!*/
+
+section>h1
+{color:green;} /* hier is het: "het MOET enkel de 'parent' erboven zijn"*/
+
+h1, h2 {
+    color: blue;
+}
+/* Welke opmaak wint?*/
+/* Altijd eerst de meest specifieke*/
+/* Dan de laatste die voorkomt wordt uitgevoerd*/
+/* Dus de SELECTION wint*/
